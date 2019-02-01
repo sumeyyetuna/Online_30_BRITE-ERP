@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="BRITE">
+
+    <test name="BRITE-ERP Smoke Test">
+        <packages>
+            <package name="com.BRITE.tests.smoke_tests"/>
+        </packages>
+    </test>
+</suite>

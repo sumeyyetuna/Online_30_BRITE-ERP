@@ -12,29 +12,44 @@ public class Menu {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(css = "[data-menu='115']")
+    @FindBy(xpath = "//ol//li")
+    public WebElement header;
+
+    @FindBy(xpath = "//a[@href='/web#menu_id=115&action=120']//span[@class='oe_menu_text']")
     public WebElement discuss;
 
-    @FindBy(css = "[data-menu='120']")
+    @FindBy(xpath = "//a[@href='/web#menu_id=120&action=136']//span[@class='oe_menu_text']")
     public WebElement calender;
 
-    @FindBy(css = "[data-menu='194']")
+    @FindBy(xpath = "//a[@href='/web#menu_id=194&action=220']//span[@class='oe_menu_text']")
     public WebElement notes;
 
-    @FindBy(css = "[data-menu='68']")
+    @FindBy(xpath = "//a[@href='/web#menu_id=68&action=']//span[@class='oe_menu_text']")
     public WebElement contacts;
 
-    @FindBy(xpath = "//span[contains(text(),'Website')]")
+    @FindBy(xpath = "//a[@href='/web#menu_id=382&action=']//span[@class='oe_menu_text']")
     public WebElement website;
 
-    @FindBy(css = "[data-menu='124']")
+    @FindBy(xpath = "//a[@href='/web#menu_id=415&action=']//span[@class='oe_menu_text']")
+    public WebElement manufacturing;
+
+    @FindBy(xpath = "//a[@href='/web#menu_id=124&action=']//span[@class='oe_menu_text']")
     public WebElement events;
 
-    @FindBy(id = "//a[@data-menu='157']")
+    @FindBy(xpath = "//a[@href='/web#menu_id=157&action=']//span[@class='oe_menu_text']")
     public WebElement employees;
 
-    @FindBy(xpath = "//*[@data-menu='295']")
+    @FindBy(xpath = "//a[@href='/web#menu_id=295&action=']//span[@class='oe_menu_text']")
     public WebElement leaves;
+
+    @FindBy(xpath = "//a[@href='/web#menu_id=388&action=']//span[@class='oe_menu_text']")
+    public WebElement expenses;
+
+    @FindBy(xpath = "//a[@href='/web#menu_id=165&action=']//span[@class='oe_menu_text']")
+    public WebElement maintenance;
+
+    @FindBy(xpath = "//a[@href='/web#menu_id=1&action=']//span[@class='oe_menu_text']")
+    public WebElement dashboards;
 
 
 
