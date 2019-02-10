@@ -19,6 +19,7 @@ public abstract class TestBase {
     protected static ExtentReports report;
     private static ExtentHtmlReporter htmlReporter;
     protected static ExtentTest extentLogger;
+    protected WebDriverWait wait;
 
 
     @BeforeMethod(alwaysRun = true)
@@ -26,6 +27,7 @@ public abstract class TestBase {
         driver = Driver.getDriver();
         pages = new Pages();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        wait = new WebDriverWait(driver,10);
         driver.get(ConfigurationReader.getProperty("url"));
         driver.manage().window().fullscreen();
     }

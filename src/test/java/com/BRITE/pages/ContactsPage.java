@@ -16,4 +16,7 @@ public class ContactsPage extends Menu {
     @FindBy(xpath = "//input[@class='o_searchview_input']")
     public WebElement contactSearch;
 
+    @FindBy(xpath = "//div//button[@class='btn btn-primary btn-sm o-kanban-button-new btn-default']")
+    public WebElement create;
+
 }
